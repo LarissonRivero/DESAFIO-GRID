@@ -5,4 +5,42 @@
 
 body{
     background-color: aquamarine;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nabvar{
+    background-color: blue;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    gap: 1;
+}
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 6px 0px 6px 0px;
+}
+
+.items{
+    background-color: rgb(216, 243, 243);
+    margin: 20px;
+    padding: 5px;
+}
+
+.grid-container{
+    display: grid;   
+    grid-template-columns: auto auto auto;
+}
+
+.grid-container div{
+    background-color: brown;
+    margin: 5px;
 }
