@@ -7,7 +7,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.nabvar, .Footer{
+.nabvar, Footer{
     background-color: blue;
     font-size: 25px;
     padding: 10px;
@@ -15,27 +15,34 @@ body{
     text-align: center;
 }
 
-.contenedor{
-    display: flex;
-    flex-direction: row;
+.main{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside head head"
+    "aside head head"
+    "footer footer footer";
 }
+
 
 ul{
     list-style: none;
 }
 
-.items{
+.aside{
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
-    padding: 1px;
+
 }
 
-.grid-container{
+.head{
     display: grid;   
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
 }
 
-.grid-container div{
+.head div{
     margin: 5px;
 }
 
@@ -53,5 +60,19 @@ ul{
 h6{
     display: inline-block;
     opacity: 50%;
+}
+
+/*Nombre de Areas para Template*/
+.nabvar{
+    grid-area: nav;
+}
+.aside{
+    grid-area: aside;
+}
+.head{
+    grid-area: head;
+}
+footer{
+    grid-area: footer;
 }
 
